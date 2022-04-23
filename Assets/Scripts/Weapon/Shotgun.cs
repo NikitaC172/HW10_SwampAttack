@@ -8,7 +8,7 @@ public class Shotgun : RangedWeapon
     {
         _isReadyShoot = false;
         Instantiate(Bullet, shootPoint.position, Quaternion.identity);
-        Invoke("Reload", _delayBetweenShoot);
+        Invoke(nameof(Reload), _delayBetweenShoot);
     }
 
     private void Reload()

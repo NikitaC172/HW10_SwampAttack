@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +13,7 @@ public class Enemy : MonoBehaviour
     private Player _target;
     private Reproducer _sound;
     private BoxCollider2D _collider;
+    private float _timeToRemove = 4f;
 
     public Player Target => _target;
     public int Reward => _reward;
@@ -39,7 +41,7 @@ public class Enemy : MonoBehaviour
         {
             _collider.enabled = false;
             Dying?.Invoke(this);
-            Invoke("Remove", 4f);
+            Invoke(nameof(Remove), _timeToRemove);
         }
     }
 

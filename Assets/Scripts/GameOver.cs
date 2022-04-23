@@ -42,7 +42,6 @@ public class GameOver : MonoBehaviour
 
         while (_spawner.transform.childCount >= lastElement)
         {
-            Debug.Log(_spawner.transform.childCount);
             yield return waitSeconds;
         }
 

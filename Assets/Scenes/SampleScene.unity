@@ -427,8 +427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weapons:
-  - {fileID: 1001044768038310599, guid: 049f88caf8cc96240ba7f52417ee7026, type: 3}
-  - {fileID: 5798681125207896317, guid: 0477a9f6774a59942b4c9aeb36b4d285, type: 3}
+  - {fileID: 2620993390525838914, guid: 049f88caf8cc96240ba7f52417ee7026, type: 3}
+  - {fileID: 25953810138482281, guid: 0477a9f6774a59942b4c9aeb36b4d285, type: 3}
   _player: {fileID: 264728817}
   _template: {fileID: 211448048046979262, guid: 26d6c89ec0e79ec418b826dfd6d6e3ee,
     type: 3}
@@ -1438,6 +1438,8 @@ GameObject:
   - component: {fileID: 264728814}
   - component: {fileID: 264728816}
   - component: {fileID: 264728817}
+  - component: {fileID: 264728819}
+  - component: {fileID: 264728820}
   - component: {fileID: 264728818}
   m_Layer: 0
   m_Name: Player
@@ -1543,7 +1545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _weapons:
-  - {fileID: 9143750516247898866, guid: d36e86e69c02d6a41a1822f54dc4db06, type: 3}
+  - {fileID: 9084053806983333454, guid: d36e86e69c02d6a41a1822f54dc4db06, type: 3}
   _shootPoint: {fileID: 2044839699}
 --- !u!82 &264728818
 AudioSource:
@@ -1641,6 +1643,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &264728819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264728813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd2ef3c053c25f468374f026f6a1a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &264728820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264728813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07bcdd8ce4395d245a7dee082db22afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &266925014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,10 +2841,10 @@ RectTransform:
   m_Father: {fileID: 150974008}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.72824997, y: 0.39200002}
-  m_AnchorMax: {x: 0.8624792, y: 0.62200004}
-  m_AnchoredPosition: {x: 1.2399902, y: 3.5599976}
-  m_SizeDelta: {x: -1.9918213, y: 0.45916748}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.36900002}
+  m_AnchoredPosition: {x: -0.29003906, y: -5}
+  m_SizeDelta: {x: -1.5761719, y: -6.488983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543085641
 MonoBehaviour:
@@ -4760,7 +4786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.8878519}
   m_AnchorMax: {x: 0.23500001, y: 1}
-  m_AnchoredPosition: {x: 17.999756, y: -14.5}
+  m_AnchoredPosition: {x: 18, y: -14.5}
   m_SizeDelta: {x: -37.51013, y: -27.26001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1253422833
@@ -4892,8 +4918,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 255
+  m_fontColor: {r: 1, g: 0, b: 0, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

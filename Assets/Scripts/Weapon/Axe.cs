@@ -9,7 +9,7 @@ public class Axe : MeleeWeapon
         _isReadyShoot = false;
         Hit hit = Instantiate(Hit, shootPoint.position, Quaternion.identity);
         hit.SetDamage(Damage);
-        Invoke("Reload", _delayBetweenShoot);
+        Invoke(nameof(Reload), _delayBetweenShoot);
     }
 
     private void Reload()

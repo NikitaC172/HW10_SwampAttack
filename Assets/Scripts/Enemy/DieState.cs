@@ -8,6 +8,7 @@ public class DieState : State
 {
     private Reproducer _sound;
     private Animator _animator;
+    private string _dieAnimation = "Die";
 
     private void Awake()
     {
@@ -18,6 +19,6 @@ public class DieState : State
     private void OnEnable()
     {
         _sound.PlaySoundDie();
-        _animator.Play("Die");
+        _animator.Play(_dieAnimation);
     }
 }

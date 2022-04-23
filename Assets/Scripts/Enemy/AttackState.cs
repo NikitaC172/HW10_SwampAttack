@@ -12,6 +12,7 @@ public class AttackState : State
     private float _lastAttackTime;
     private Animator _animator;
     private Reproducer _sound;
+    private string _attackAnimation = "Attack";
 
     private void Awake()
     {
@@ -36,7 +37,7 @@ public class AttackState : State
 
     private void Attack(Player target)
     {
-        _animator.Play("Attack");
+        _animator.Play(_attackAnimation);
         _sound.PlaySoundAttack();
         target.ApplyDamage(_damage);
     }

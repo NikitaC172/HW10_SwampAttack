@@ -5,11 +5,11 @@ using UnityEngine;
 public class Hit : MonoBehaviour
 {
     private int _damage;
-    private float _delayRemove = 1.5f;
+    private float _delayRemove = 0.5f;
 
     private void OnEnable()
     {
-        Invoke("Remove", _delayRemove);
+        Invoke(nameof(Remove), _delayRemove);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
